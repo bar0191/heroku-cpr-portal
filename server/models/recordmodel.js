@@ -1,6 +1,6 @@
 var uuid = require("uuid");
 var db = require("../app").bucket;
-var config = require("../config");
+//var config = require("../config");
 var N1qlQuery = require('couchbase').N1qlQuery;
 
 function RecordModel() { };
