@@ -1,0 +1,6 @@
+{
+    "couchbase": {
+        "server": "104.131.10.165:8091",
+        "bucket": "default"
+    }
+}
