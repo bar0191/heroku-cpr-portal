@@ -21,6 +21,6 @@ var routes = require("./routes/routes.js")(app);
 
 app.use('/*', express.static(path.join(__dirname, "../../client/build")));
 
-var server = app.listen(3001, function () {
+var server = app.listen((process.env.PORT || 3001), function () {
     console.log("Listening on port %s...", server.address().port);
 });
