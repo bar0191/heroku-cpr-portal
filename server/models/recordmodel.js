@@ -16,7 +16,7 @@ RecordModel.delete = function(documentId, callback) {
 };
 
 RecordModel.getAll = function(callback) {
-    var statement = "SELECT * " + "FROM `" + config.couchbase.bucket + "`";
+    var statement = "SELECT * " + "FROM `" + '`default`' + "`";
     var query = N1qlQuery.fromString(statement).consistency(N1qlQuery.Consistency.REQUEST_PLUS);
     db.query(query, function(error, result) {
         if(error) {
