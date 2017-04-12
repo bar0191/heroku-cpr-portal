@@ -5,7 +5,8 @@
     "concurrently": "^3.4.0"
   },
   "engines": {
-    "node": "6.10.0"
+    "node": "6.10.0",
+    "npm": "4.1.2"
   },
   "scripts": {
   "install": "(cd client && yarn) && (cd server && yarn)",
