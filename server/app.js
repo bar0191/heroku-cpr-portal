@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var couchbase = require("couchbase");
 var path = require("path");
-var config = require("./config.json");
+//var config = require("./config.json");
 
 var app = express();
 
@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 module.exports.bucket = (
-  new couchbase.Cluster(config.couchbase.server)).openBucket(config.couchbase.bucket);
+  new couchbase.Cluster("104.131.10.165:8091")).openBucket("default");
 
 
 var routes = require("./routes/routes.js")(app);
