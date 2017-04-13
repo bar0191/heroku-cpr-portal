@@ -9,7 +9,7 @@ import './index.scss';
 
 
 const history = useRouterHistory(createBrowserHistory)({
-    basename: '/client/'       // to serve this template from subdirectory, change the base path.
+    basename: '/cpr-final/client/'       // to serve this template from subdirectory, change the base path.
 })
 
 ReactDOM.render(
